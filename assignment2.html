@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Unica+One&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <title>Assignment 2</title>
+    <style>
+        div{
+            margin-left: 2em;
+        }
+        p{
+            width: auto; 
+            height: auto;
+        }
+        #clock{
+            height: 50px;
+            width: 150px;
+            background-color: #e9ec16;
+            color: #0e0af7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            font-family: 'Unica One', cursive;
+        }
+    </style>
+</head>
+<body>
+    <h2>Second Assignment</h2>
+    A. 1) Digital Clock :-
+    <div>
+        <div id="clock" style="margin-left: 0em;"></div><br>
+        <button onclick="start('24')" id='tf'>24 Hour</button>
+        <button onclick="start('12')" id='ot'>12 Hour</button>
+        <br>
+    </div>
+    <script src="clock.js"></script>
+    <br>
+    A. 2) Given array of strings is :- myColor = ['Red','Green','White','Black']
+    <div>
+        <br>
+        <button onclick="joinStr()">Join Strings</button>
+        <br>
+        <p id="joinst"></p>
+    </div>
+    <script src="joinstr.js"></script>
+    <br>
+    A. 3) Given array of numbers :- myArr = [3,8,7,6,5,-4,-3,2,1]
+    <div>
+        <br>
+        <button onclick="sortnm()">Sort Numbers</button>
+        <br>
+        <p id="sortnm"></p>
+    </div>
+    <script src="sortNum.js"></script>
+    <br>
+    A. 4) Given array :- arr = [3,'a','a','a',2,3,'a',3,'a',2,4,9,3]
+    <div>
+        <br>Find most frequent item?
+        <button onclick="freq()">Search</button>
+        <br>
+        <p id="freq"></p>
+    </div>
+    <script src="frequent.js"></script>
+    <br>
+    A. 5)Add and display items of array<div>
+        <input type="text" name="addEle" id="addElee">
+        <button onclick="addar(addElee)">Add</button>
+        <button onclick="displayar()">Display</button>
+        <hr>
+        <p id="arEle"></p>
+    </div>
+    <script src="addtoArr.js"></script>
+    <br>
+    A. 6)Remove duplicate items of array :- arr = [3,'a','a','A',2,3,'a',3,'a',2,4,9,3]
+        <div>
+        <button onclick="rmvDp()">Remove</button>
+       
+        <p id="rmvdup"></p>
+    </div>
+    <script src="removeDupl.js"></script>
+    <br>
+    A. 7)Remove items from dropdown list :-
+        <div>
+            <form>
+                <select id="courses">
+                    <option value="1">Ansible</option>
+                    <option value="2">Docker</option>
+                    <option value="3">Openshift</option>
+                    <option value="4">ML</option>
+                    <option value="5">Python</option>
+                </select>
+                <input type="button" value="Select and Remove" onclick="rmvIt()">
+            </form>
+        </div>
+        <script src="removeItem.js"></script>
+</body>
+</html>
